@@ -22,13 +22,13 @@ COPY = {
     "es": {
         "lang": "es", "locale": "es_ES", "dir": "", "other": "en/", "other_label": "English",
         "pages": {"index": "index.html", "privacy": "privacidad.html", "support": "soporte.html"},
-        "title": "Path — Rutas para Apple Watch",
+        "title": "Path: Rutas GPS en tu reloj · The way is yours",
         "description": "Graba y navega cualquier ruta con el Apple Watch. Mapa topográfico, aviso si te sales y análisis de cada salida. Gratis y sin anuncios.",
         "nav": ["Qué hace", "Capturas", "Soporte"],
         "download": "Descargar",
         "appstore": "Descargar en el App Store",
         "soon": "Muy pronto en el App Store",
-        "kicker": "Hecha para Apple Watch",
+        "kicker": "The way is yours",
         "h1": "Tu montaña, <em>en la muñeca</em>.",
         "sub": "Graba y navega cualquier ruta con el Apple Watch. El iPhone, solo para prepararla.",
         "note": "Gratis · Sin anuncios · Sin suscripciones",
@@ -59,13 +59,13 @@ COPY = {
     "en": {
         "lang": "en", "locale": "en_US", "dir": "en/", "other": "../", "other_label": "Español",
         "pages": {"index": "index.html", "privacy": "privacy.html", "support": "support.html"},
-        "title": "Path — Routes for Apple Watch",
+        "title": "Path: GPS Routes on Your Watch · The way is yours",
         "description": "Record and navigate any route with your Apple Watch. Topo map, off-route alerts and an analysis of every outing. Free, no ads.",
         "nav": ["Features", "Screenshots", "Support"],
         "download": "Download",
         "appstore": "Download on the App Store",
         "soon": "Coming soon to the App Store",
-        "kicker": "Built for Apple Watch",
+        "kicker": "The way is yours",
         "h1": "Your mountain, <em>on your wrist</em>.",
         "sub": "Record and navigate any route with your Apple Watch. Your iPhone is just for planning.",
         "note": "Free · No ads · No subscriptions",
@@ -236,7 +236,7 @@ def footer(c, up):
     p = c["pages"]
     return f"""<footer class="pie"><div class="wrap">
   <div class="col"><div class="marca"><img src="{up}assets/icon.png" alt="" width="28" height="28"><span>Path</span></div>
-    <p>{c['footer_note']}</p><p class="copy">© 2026 LightSide Studio</p></div>
+    <p>{c['footer_note']}</p><p class="copy">The way is yours · © 2026 LightSide Studio</p></div>
   <nav><a href="{p['support']}">{c['footer_support']}</a><a href="{p['privacy']}">{c['footer_privacy']}</a>
     <a href="mailto:{EMAIL}">{EMAIL}</a><a href="{c['other']}" lang="{'en' if c['lang'] == 'es' else 'es'}">{c['other_label']}</a></nav>
 </div></footer>
